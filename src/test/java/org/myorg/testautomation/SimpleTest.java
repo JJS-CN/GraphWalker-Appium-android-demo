@@ -108,7 +108,7 @@ public class SimpleTest extends ExecutionContext implements Login {
 
     @BeforeExecution
     public void setup() {
-        //这里是android的配置，ios与web配置不同
+        //这里是android的配置，如果是ios与web则配置不同
         //这里的driver初始化功能是由appium.java_client提供
         File classpathRoot = new File(System.getProperty("user.dir"));
         //设置待测试apk文件夹路径
@@ -120,9 +120,9 @@ public class SimpleTest extends ExecutionContext implements Login {
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         //平台类型
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
-        //系统版本号：指手机系统版本
+        //todo 系统版本号：指手机系统版本，需要根据测试机不同继续宁修改
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
-        //设备名称：每个型号手机不同，需要通过adb连接获取
+        //todo 设备名称：每个型号手机不同，需要通过adb连接获取，需要根据测试机不同继续宁修改
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung SM-G9750");
         //待测试apk路径
         capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
