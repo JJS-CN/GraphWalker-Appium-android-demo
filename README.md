@@ -4,7 +4,7 @@
 一切顺利时，你只需要以下几个步骤即可运行此demo;
 1. 安装好所需软件，下载此demo
 2. 修改`SimpleTest.java`类中的`PLATFORM_VERSION`和`DEVICE_NAME`配置
-3. 开启一个终端运行`appium`服务
+3. 开启一个终端启动appium服务，执行命令`appium`
 4. 再开启一个终端cd到项目根目录
 5. 执行命令`mvn graphwalker:generate-sources`
 6. 执行命令`mvn test`
@@ -39,12 +39,12 @@
 ## GraphWalker安装
 * 下载官网提供的`graphwalker-studio-4.3.1.jar`文件，并存放到合适位置（因为以后创建模型都需要运行这个jar）
 
-* 终端中运行启动服务`java -jar graphwalker-studio-4.3.1.jar`
+* 启动并运行服务：终端执行命令`java -jar graphwalker-studio-4.3.1.jar`
 
 * 从浏览器通过url地址打开操作界面：http://localhost:9090/studio.html
 
 * 操作方式：https://github.com/GraphWalker/graphwalker-project/wiki/GraphWalker-Studio
-* 在操作页面新建模型并验证通过后，保存下来；（demo中为Login）
+* 在操作页面新建模型并验证通过后，保存下来；（demo中为Login.json）
 
 官网下载地址（也可通过git下载）：http://graphwalker.github.io/
 
@@ -60,8 +60,8 @@ git地址：https://github.com/GraphWalker/graphwalker-project
 
 ## appium安装
 * 通过npm下载：npm install -g appium
-* 验证：终端中输入`appium -v`
-* 启动并运行服务：终端中输入`appium`
+* 验证：终端输入`appium -v`
+* 启动并运行服务：终端执行命令`appium`
 
 ## demo项目说明
 参照项目创建文档：https://github.com/GraphWalker/graphwalker-project/wiki/Test-execution
